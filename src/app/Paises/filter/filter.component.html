@@ -1,3 +1,11 @@
+<style scoped>
+    @media (max-width: 575px) {
+        .mg-top {
+            margin-top: 10px;
+        }
+    }
+</style>
+
 <div class="container main-container">
     <form>
         <div class="row">
@@ -6,10 +14,12 @@
             </div>
             <div class="col-10 col-sm-4 col-md-4 col-lg-4 mg-top">
                 <select class="form-control">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                    <option value="" selected>Busque por região</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="europe">Europe</option>
+                    <option value="polar">Polar</option>
                 </select>
             </div>
             <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-flex justify-content-end mg-top">
@@ -18,11 +28,3 @@
         </div>
     </form>
 </div>
-
-<style scoped>
-    @media (max-width: 575px) {
-        .mg-top {
-            margin-top: 10px;
-        }
-    }
-</style>
