@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-filter',
@@ -6,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class FilterComponent implements OnInit {
+export class FilterComponent {
 
-  constructor() { }
+  constructor(private sharedService: SharedService) { }
 
-  ngOnInit(): void {
+  public name: string;
+
+  filterCountries() {
+    this.sharedService.sendEvent(this.name);
   }
 
 }

@@ -13,22 +13,35 @@
         white-space: nowrap;
         overflow: hidden;
     }
+
+    .card-shadow{
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 8px 10px;
+    }
+
+    .card:hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 12px 15px;
+    }
 </style>
 
 <div class="container main-container">
-
-    <div class="row">
-        <div *ngFor="let country of countries" class="col-md-3" style="padding-bottom: 30px;">
-            <div class="card" style="width: 260px;">
-                <img class="card-img-top" src="{{ country.flag }}" width="230px" height="160px">
-                <div class="card-body">
-                    <h5 class="card-title ellipsis">{{ country.name }}</h5>
-                    <p class="card-text"><b>Capital: </b>{{ country.capital }}</p>
-                    <p class="card-text"><b>Região: </b>{{ country.region }}</p>
-                    <p class="card-text"><b>População: </b>{{ country.population }}</p>
+    <div class="row" [ngSwitch]="hasError">
+        <ng-container *ngSwitchCase="false">
+            <div *ngFor="let country of countries" class="col-md-3" style="padding-bottom: 30px;">
+                <div class="card card-shadow" style="width: 260px; transition: 0.2s linear;">
+                    <img class="card-img-top" src="{{ country.flag }}" width="230px" height="160px">
+                    <div class="card-body">
+                        <h5 class="card-title ellipsis">{{ country.name }}</h5>
+                        <p class="card-text"><b>Capital: </b>{{ country.capital }}</p>
+                        <p class="card-text"><b>Região: </b>{{ country.region }}</p>
+                        <p class="card-text"><b>População: </b>{{ country.population | number }}</p>
+                    </div>
                 </div>
             </div>
+        </ng-container>
+        <div class="col">
+            <p *ngSwitchCase="true">Nenhum país encontrado!</p>
         </div>
     </div>
-
 </div>

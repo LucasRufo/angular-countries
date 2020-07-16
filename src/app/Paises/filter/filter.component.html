@@ -7,23 +7,13 @@
 </style>
 
 <div class="container main-container">
-    <form>
+    <form (submit)="filterCountries()">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-7">
-                <input type="text" class="form-control" placeholder="Busque por nome">
-            </div>
-            <div class="col-10 col-sm-4 col-md-4 col-lg-4 mg-top">
-                <select class="form-control">
-                    <option value="" selected>Busque por região</option>
-                    <option value="asia">Asia</option>
-                    <option value="africa">Africa</option>
-                    <option value="americas">Americas</option>
-                    <option value="europe">Europe</option>
-                    <option value="polar">Polar</option>
-                </select>
+            <div class="col-12 col-sm-10 col-md-10 col-lg-11">
+                <input [(ngModel)]="name" name="name" type="text" class="form-control" placeholder="Busque por nome ou por região">
             </div>
             <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-flex justify-content-end mg-top">
-                <button class="btn btn-primary">Filtrar</button>
+                <button type="submit" class="btn btn-primary">Filtrar</button>
             </div>
         </div>
     </form>
