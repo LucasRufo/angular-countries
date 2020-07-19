@@ -1,18 +1,10 @@
-<style scoped>
-    @media (max-width: 575px) {
-        .mg-top {
-            margin-top: 10px;
-        }
-    }
-</style>
-
 <div class="container main-container">
-    <form (submit)="filterCountries()">
+    <form (ngSubmit)="filterCountries()">
         <div class="row">
-            <div class="col-12 col-sm-10 col-md-10 col-lg-11">
-                <input [(ngModel)]="name" name="name" type="text" class="form-control" placeholder="Busque por nome ou por região">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-11">
+                <input [formControl]="filter" name="name" type="text" class="form-control" placeholder="Busque por nome ou por região">
             </div>
-            <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-flex justify-content-end mg-top">
+            <div class="col-2 col-sm-2 col-md-2 col-lg-1 d-flex justify-content-end">
                 <button type="submit" class="btn btn-primary">Filtrar</button>
             </div>
         </div>

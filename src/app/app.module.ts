@@ -13,7 +13,6 @@ import { routerConfig } from './app.routes';
 import { FilterComponent } from './Paises/filter/filter.component';
 import { ListComponent } from './Paises/list/list.component';
 import { CountryService } from './Paises/country.service';
-import { FormComponent } from './Email/form/form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { FormComponent } from './Email/form/form.component';
     MainComponent,
     FilterComponent,
     ListComponent,
-    FormComponent
   ],
   imports: [
     BrowserModule,

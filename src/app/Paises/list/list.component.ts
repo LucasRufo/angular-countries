@@ -28,11 +28,11 @@ export class ListComponent implements OnInit {
     this.countryService.getAllCountries()
       .subscribe(
         countries => {
-          console.log(this.hasError = false)
+          this.hasError = false
           this.countries = countries
         },
         error => {
-          console.log(this.hasError = true)
+          this.hasError = true
         }
       )
   }
@@ -46,26 +46,26 @@ export class ListComponent implements OnInit {
 
     name = name.toLowerCase();
 
-    if (name == 'asia' || name == 'americas' || name == 'africa' || name == "polar" || name == 'oceania')
+    if (name == 'asia' || name == 'americas' || name == 'africa' || name == "polar" || name == 'oceania' || name == "europe")
       this.countryService.getCountriesByRegion(name)
         .subscribe(
           countries => {
-            console.log(this.hasError = false)
+            this.hasError = false
             this.countries = countries
           },
           error => {
-            console.log(this.hasError = true)
+            this.hasError = true
           }
         );
     else
       this.countryService.getCountryByName(name)
         .subscribe(
           countries => {
-            console.log(this.hasError = false)
+            this.hasError = false
             this.countries = countries
           },
           error => {
-            console.log(this.hasError = true)
+            this.hasError = true
           }
         );
   }

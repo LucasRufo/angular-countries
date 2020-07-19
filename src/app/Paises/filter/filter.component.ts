@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SharedService } from '../shared.service';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-filter',
@@ -9,12 +10,12 @@ import { SharedService } from '../shared.service';
 })
 export class FilterComponent {
 
+  filter = new FormControl();
+
   constructor(private sharedService: SharedService) { }
 
-  public name: string;
-
   filterCountries() {
-    this.sharedService.sendEvent(this.name);
+    this.sharedService.sendEvent(this.filter.value);
   }
 
 }
