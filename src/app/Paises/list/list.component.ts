@@ -6,7 +6,8 @@ import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-list',
-  templateUrl: './list.component.html'
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
 
@@ -15,7 +16,8 @@ export class ListComponent implements OnInit {
       .subscribe(
         (result) => {
           this.filterList(result.name);
-        })
+        }
+      )
   }
 
   public countries: Country[];

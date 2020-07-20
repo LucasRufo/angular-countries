@@ -13,6 +13,7 @@ import { routerConfig } from './app.routes';
 import { FilterComponent } from './Paises/filter/filter.component';
 import { ListComponent } from './Paises/list/list.component';
 import { CountryService } from './Paises/country.service';
+import { DetailsComponent } from './Paises/details/details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CountryService } from './Paises/country.service';
     MainComponent,
     FilterComponent,
     ListComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
