@@ -2,7 +2,7 @@
 
 Desenvolvi este projeto para ter um conhecimento inicial do framework front-end Angular. Nele desenvolvi uma interface responsiva que consome a API RestCountries usando o Angular, Bootstrap 4 e o Ngx-Bootstrap. 
 
-[Link da API:](https://restcountries.eu/) 
+[Link da API](https://restcountries.eu/) 
 
 ### Ferramentas e bibliotecas
 
