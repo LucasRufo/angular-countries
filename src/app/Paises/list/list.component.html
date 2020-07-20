@@ -7,14 +7,14 @@
                     <div class="card-body">
                         <h5 class="card-title ellipsis">{{ country.name }}</h5>
                         <p class="card-text ellipsis"><b>Capital: </b>{{ country.capital }}</p>
-                        <p class="card-text"><b>Região: </b>{{ country.region }}</p>
-                        <p class="card-text dis-none"><b>População: </b>{{ country.population | number }}</p>
+                        <p class="card-text"><b>Region: </b>{{ country.region }}</p>
+                        <p class="card-text dis-none"><b>Population: </b>{{ country.population | number }}</p>
                     </div>
                 </div>
             </a>
         </ng-container>
         <div class="col-12" *ngSwitchCase="true">
-            <div class="alert alert-warning">Nenhum país encontrado!</div>
+            <div class="alert alert-warning">No results found for your search!</div>
         </div>
     </div>
 </div>
