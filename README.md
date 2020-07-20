@@ -4,7 +4,7 @@ Desenvolvi este projeto para ter um conhecimento inicial do framework front-end 
 
 [Link da API](https://restcountries.eu/) 
 
-![](https://github.com/LucasRufo/angular-countries/blob/master/project-image.png)
+![](https://github.com/LucasRufo/angular-countries/blob/master/project.png)
 
 ### Ferramentas e bibliotecas
 
