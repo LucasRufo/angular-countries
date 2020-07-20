@@ -1,31 +1,28 @@
-<<<<<<< HEAD
-# AngularCountries
+# Angular Countries :checkered_flag:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+Desenvolvi este projeto para ter um conhecimento inicial do framework front-end Angular. Nele desenvolvi uma interface responsiva que consome a API RestCountries usando o Angular, Bootstrap 4 e o Ngx-Bootstrap. 
 
-## Development server
+[Link da API:](https://restcountries.eu/) 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Ferramentas e bibliotecas
 
-## Code scaffolding
+- Angular
+- Bootstrap 4
+- Ngx-Bootstrap
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Para rodar o projeto
 
-## Build
+- Baixe o projeto e rode o comando abaixo no terminal
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+npm install
+```
 
-## Running unit tests
+- Após ter baixado as dependências, rode o comando abaixo e abra o navegador na url "http://localhost:4200/"
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng serve
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# angular-countries
->>>>>>> 2ede771bd375cd8f8f958433d545fa25f7166b5d
+### Licença
+[MIT](https://choosealicense.com/licenses/mit/)
